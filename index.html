@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="lesson 8.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" camera-orbit="7.674deg 65.93deg 1.508m" field-of-view="30deg">
+      <button class="Hotspot" slot="hotspot-2" data-position="0.04109010469859803m 0.1515688359076577m -0.049785041891188986m" data-normal="0m -2.220446049250313e-16m 1m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">screen</div>
+      </button><button class="Hotspot" slot="hotspot-3" data-position="0.307166788951456m 0.12049198764869347m 0.008027759469895042m" data-normal="0m -2.220446049250313e-16m 1m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">magnifying glass</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.4.0/model-viewer.min.js"></script>
+  </body>
+</html>
